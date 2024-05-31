@@ -1,7 +1,6 @@
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-<<<<<<< HEAD
 const authenticateToken = require('../middleware/auth');
 
 const SECRET_KEY = 'your_secret_key';
@@ -19,7 +18,6 @@ const registerUserRouter = (router) => {
     }
   });
 
-  console.log("registering /login");
   router.post('/login', async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -37,43 +35,8 @@ const registerUserRouter = (router) => {
       }
     } catch (error) {
       res.status(500).json({ message: 'Erro ao fazer login' });
-=======
-const router = express.Router();
-
-const SECRET_KEY = 'your_secret_key';
-
-router.post('/register', async (req, res) => {
-  const { password, ...userData } = req.body;
-  const hashedPassword = await bcrypt.hash(password, 10);
-  const newUser = new User({ ...userData, password: hashedPassword });
-  try {
-    await newUser.save();
-    res.status(201).json({ message: 'Usuário registrado com sucesso' });
-  } catch (error) {
-    res.status(500).json({ message: 'Erro ao registrar usuário' });
-  }
-});
-
-router.post('/login', async (req, res) => {
-  const { email, password } = req.body;
-  try {
-    const user = await User.findOne({ email });
-    if (user) {
-      const match = await bcrypt.compare(password, user.password);
-      if (match) {
-        const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '1h' });
-        res.status(200).json({ user, token });
-      } else {
-        res.status(401).json({ message: 'Email ou senha inválidos' });
-      }
-    } else {
-      res.status(401).json({ message: 'Email ou senha inválidos' });
->>>>>>> e1c2a941 (Atualizações e melhorias no projeto visita-guiada)
     }
-  } catch (error) {
-    res.status(500).json({ message: 'Erro ao fazer login' });
-  }
-});
+  });
 
   router.get('/users', authenticateToken, async (req, res) => {
     try {
