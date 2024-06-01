@@ -73,10 +73,6 @@ npm start
 2.Acesse a aplicação em seu navegador através do endereço:
 http://localhost:3000
 
-### Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
 ### Contato
 Grupo 59 - Universidade da Fortaleza (Unifor)
 
