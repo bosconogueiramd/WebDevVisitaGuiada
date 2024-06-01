@@ -24,6 +24,18 @@ Uma solução para treinamento em regulação médica foi desenvolvida, desde su
 
 ---
 
+# Grupo 59
+
+## Integrantes:
+
+| Nome                             | Matrícula | GitHub                |
+|----------------------------------|-----------|-----------------------|
+| João Bosco Sales Nogueira        | 2313609   | [bosconogueiramd](https://github.com/bosconogueiramd) |
+| Carlos Anderson Cruz da Silva    | 2317579   | [CarlosAnderson-code](https://github.com/CarlosAnderson-code) |
+| Paulo Henrique de Oliveira Gomes | 2317664   | [pauloh-code](https://github.com/pauloh-code) |
+| Dirceu Vaz Soares Cunha          | 2317929   | [dirceuvaz](https://github.com/dirceuvaz) |
+| Jully Stefany Ferreira da Silva  | 2317685   | [jullystefanyfs](https://github.com/jullystefanyfs) |
+
 ## Como Executar o Projeto
 
 ### Pré-requisitos
