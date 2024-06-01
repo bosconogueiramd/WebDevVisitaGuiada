@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Visita Guiada
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introdução
 
-## Available Scripts
+Obedecendo às instruções para desenvolvimento da atividade, o Grupo 59 desenvolveu uma plataforma web chamada “Visita Guiada”. Trata-se de uma solução de treinamento em regulação médica de consultas e exames. Por meio da plataforma, o usuário médico regulador iniciante consegue, após cadastrar-se, ser conduzido em um passo a passo, que orienta sob o uso específico de um sistema de regulação pré-existente. Ao fim do treinamento, o usuário médico é conduzido a responder um questionário, obtendo um certificado de completude satisfatória quando atinge pontuação de pelo menos 70% do total. Já o usuário com privilégios, médico coordenador, consegue, através de um painel administrativo, moderar o cadastro de usuários.
 
-In the project directory, you can run:
+## Material e Métodos
 
-### `npm start`
+Inicialmente, os integrantes do grupo discutiram através de um processo criativo de brainstorming qual seria o tema da solução. Após decidido o tema, os integrantes optaram pelo desenvolvimento, obedecendo ao seguinte fluxo: definição do modelo conceitual, regras de negócio, codificação, testagem e escrita da atividade final. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Tecnologias Utilizadas:**
+  - HTML para as páginas principais
+  - CSS para estilização
+  - JSON para armazenamento inicial de dados
+  - MongoDB para armazenamento de dados na versão final
+  - Backend API Rest - (Node.js) e Frontend (React) integrados conforme as tecnologias aprendidas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Conforme os integrantes estudavam os percursos de aprendizagem, as tecnologias aprendidas iam sendo incorporadas, modificando a estrutura dos códigos e criando novas pastas e arquivos.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Conclusão
 
-### `npm run build`
+Uma solução para treinamento em regulação médica foi desenvolvida, desde sua landing page até a página de geração de certificado de completude. Os integrantes iniciaram seu processo de aprendizado desde o básico do HTML e CSS, até integração de APIs, uso de frameworks e banco de dados. Ao fim, o grupo notou um exponencial crescimento de aprendizagem. Ficou a sensação de que esse é apenas um começo em um longo aprendizado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como Executar o Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
 
-### `npm run eject`
+- Node.js instalado
+- MongoDB configurado e em execução
+- Editor VSCODE
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Instalação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/visita-guiada.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navegue até o diretório do projeto:
+   cd visita-guiada
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.Instale as dependências:
+   npm install
 
-## Learn More
+### Passo 1 - Execução Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Instalar as depenências do backend no diretório backend:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Startar o servidor Backend no diretório backend:
+node server.js
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Passo 2 - Execução Frontend
 
-### Analyzing the Bundle Size
+1. Start o React Frontend no diretório frontend:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2.Acesse a aplicação em seu navegador através do endereço:
+http://localhost:3000
 
-### Making a Progressive Web App
+### Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-### Advanced Configuration
+### Contato
+Grupo 59 - Universidade da Fortaleza (Unifor)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
